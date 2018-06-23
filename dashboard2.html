@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CGPA</title>
+	<script type="text/javascript" src="app2.js"></script>
+   
+	<link rel="stylesheet" type="text/css" href="main_style.css" />
+</head>
+<body>
+    
+<h2> Federal University of Technology, Owerri. </h2>
+<h4> Fast, Accurate and Seemless GP calculator </h4>
+<form name="new_student">
+
+	<label for="student_name">Student name : </label> <br />
+	<input type="text" name="student_name" placeholder="Surname Firstname Othername " > <br />
+
+	<label for="dept">Choose Department : </label> <br />
+	<select name="dept" id="dept">
+		
+		<option value="PET">PET</option>
+		<option value="CHE">CHE</option>
+	</select> <br />
+
+	<label for="level">Choose level : </label> <br />
+	<select name="level">
+		
+		<option value="yr1">100L</option>
+		<option value="yr2">200L</option>
+		<option value="yr3">300L</option>
+		<option value="yr4">400L</option>
+		<option value="yr5">500L</option>
+	</select> <br />
+		
+		
+	<button type="button" name="send" onclick="show_student_data()"> Show Courses</button>
+
+	<p id="courses"></p>
+	<p id="calculate"></p>
+	<p id="cgpa"></p>
+
+</form>
+
+<script type="text/javascript" src="control2.js"></script>
+</body>
+</html>
